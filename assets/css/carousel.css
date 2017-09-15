@@ -2,6 +2,169 @@
   font-family: 'alex';
   src: url('../fonts/AlexBrush-Regular.ttf');
 }
+/*css menu*/
+/*suppression des marges des navigateurs et definition d'une police de caractère*/
+.menuDeroulant{
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0px;
+  padding:0px;
+}
+/*suppression des marges pour les ul de la nav*/
+nav > ul{
+  margin: 0px;
+  padding: 0px;
+}
+/*suppression des puces*/
+nav li{
+  list-style-type: none;
+}
+/*on mets en ligne uniquement les li de la barre de menu*/
+nav > ul > li{
+  float: left;
+  position: relative;
+}
+/*on cache les sous-onglets qui ne doivent apparaitre qu'au survol*/
+.submenu{
+  display: none;
+}
+/*ajout d'une bordure a chacun des sous elements*/
+.submenu li{
+  border-bottom: 1px solid red;
+}
+/*mise en forme des liens des sous menus*/
+.submenu li a{
+  padding: 15px 30px;
+  font-size: 13px;
+  color: orange;
+  width: 270px;
+}
+/*on rend la case a cocher et le mot "menu" invisible*/
+nav input[type=checkbox]{
+  display: none;
+}
+/*on cache le bouton affichant le menu mobile*/
+.menu-mobile{
+  display: none;
+}
+/*etirer le menu pour qu'il prenne toute la largeur disponible*/
+nav{
+  width: 100%;
+  background-color: black;
+}
+/*un hack css (clearfix)*/
+nav > ul::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+nav a{
+  display: inline-block;
+  text-decoration: none;
+}
+nav > ul > li > a{
+  padding: 20px 30px;
+  color: white;
+}
+/*mise en forme des sous onglets pour qu'ils apparaissent au survol et bien sous la classe parent auquels ils appartiennent*/
+nav li:hover .submenu{
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  z-index: 100000;
+}
+.menu-accueil:hover{
+  border-top: 5px solid #e44d26;
+  background-color: rgba(228, 77, 38, 0.15);
+}
+.menu-parcours:hover{
+  border-top: 5px solid #0070bb;
+  background-color: rgba(000, 112, 192, 0.15);
+}
+/*habillage des sous onglets*/
+.menu-parcours .submenu{
+  background-color: rgb(230, 100, 40);
+}
+.menu-villes:hover{
+  border-top: 5px solid #f1dc4f;
+  background-color: rgba(241, 211, 79, 0.15);
+}
+/*habillage des sous onglets*/
+.menu-villes .submenu{
+  background-color: rgb(000, 160, 240);
+}
+.menu-theme:hover{
+  border-top: 5px solid #BBB;
+  background-color: rgba(220, 220, 220, 0.15);
+}
+/*habillage des sous onglets*/
+.menu-theme .submenu{
+  background-color: rgb(251, 216, 99);
+}
+.menu-partenaire:hover{
+  border-top: 5px solid #e44d26;
+  background-color: rgba(228, 77, 38, 0.15);
+}
+/*habillage des sous onglets*/
+.menu-partenaire .submenu{
+  background-color: rgb(230, 100, 40);
+}
+.menu-contact:hover{
+  border-top: 5px solid #0070bb;
+  background-color: rgba(000, 112, 192, 0.15);
+}
+/*habillage des sous onglets*/
+.menu-partenaire .submenu{
+  background-color: rgb(000, 160, 240);
+}
+/*ajustement de l'amlignement du texte decaler suite a l'insertion de bordures*/
+nav > ul > li:hover a{
+  padding: 15px 30px 20px 30px;
+}
+.submenu li:hover a{
+  color: #EEE;
+  font-weight: bold;
+}
+.menu-villes .submenu li:hover{
+  background-color: rgb(210, 77, 60);
+}
+.menu-theme .submenu li:hover{
+  background-color: rgb(000, 115, 200);
+}
+.menu-partenaire .submenu li:hover{
+  background-color: rgb(200, 165, 75);
+}
+/*affiche le menu quand on coche la case*/
+nav input[type=checkbox]:checked ~ ul{
+  display: block;
+}
+/*rendre le menu responsive*/
+@media screen and (max-width : 680px){
+  .menu-mobile{
+    display: block;
+    color: #FFF;
+    background-color: rgba(29, 197, 151, 0.97);
+    text-align: center;
+    padding: 12px 0;
+  }
+  nav ul{
+    display: none;
+  }
+
+  nav ul li, nav ul li a{
+  width: 100%;
+  text-align: center;
+  }
+  nav ul li a, ul li:hover a{
+  padding: 10px 0px 10px 0px;
+  }
+  nav li:hover .submenu{
+  display: block;
+  position: static;
+  }
+}
+/*css menu*/
 
 /*css carrousel*/
 *{
@@ -84,10 +247,28 @@
   }
 }
 /*css carrousel*/
-#footer{
-  position: absolute;
-  bottom: 0px;
+
+/*header du site*/
+.essai{
+  width: 100%;
+  display: flex;
 }
+.entete{
+  width: 50%;
+  align-self: center;
+}
+.logo{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.bande{
+  width: 95%;
+  height: 15px;
+  background-color: #82f25f;
+}
+/*header du site*/
+
 .titre{
   text-align: center;
 }
