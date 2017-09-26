@@ -2,7 +2,8 @@
   font-family: 'alex';
   src: url('../fonts/AlexBrush-Regular.ttf');
 }
-/*css menu*/
+/*menu*/
+
 /*suppression des marges des navigateurs et definition d'une police de caractère*/
 .menuDeroulant{
   font-family: Helvetica, Arial, sans-serif;
@@ -49,7 +50,7 @@ nav input[type=checkbox]{
 /*etirer le menu pour qu'il prenne toute la largeur disponible*/
 nav{
   width: 100%;
-  background-color: black;
+  background-color: #6A767F;
 }
 /*un hack css (clearfix)*/
 nav > ul::after{
@@ -144,9 +145,10 @@ nav input[type=checkbox]:checked ~ ul{
   .menu-mobile{
     display: block;
     color: #FFF;
-    background-color: rgba(29, 197, 151, 0.97);
+    background-color: black;
     text-align: center;
     padding: 12px 0;
+    width: 98%;
   }
   nav ul{
     display: none;
@@ -164,9 +166,9 @@ nav input[type=checkbox]:checked ~ ul{
   position: static;
   }
 }
-/*css menu*/
+/*menu*/
 
-/*css carrousel*/
+/*carrousel*/
 *{
   margin: 0;
   padding:0;
@@ -200,7 +202,6 @@ nav input[type=checkbox]:checked ~ ul{
   position: absolute;
   box-shadow: 0px 0px 15px 0px black;
 }
-
 .content-carrousel figure:nth-child(1){
   transform: rotateY(0deg)translateZ(300px);
 }
@@ -246,26 +247,24 @@ nav input[type=checkbox]:checked ~ ul{
     transform: rotateY(360deg);
   }
 }
-/*css carrousel*/
+/*carrousel*/
 
 /*header du site*/
 .essai{
   width: 100%;
   display: flex;
+  justify-content: space-between;
 }
-.entete{
-  width: 50%;
+.enteteAccueil{
   align-self: center;
 }
 .logo{
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
+margin: 3px;
 }
 .bande{
   width: 95%;
   height: 15px;
-  background-color: #82f25f;
+  background-color: #88CCFF;
 }
 /*header du site*/
 
@@ -275,11 +274,12 @@ nav input[type=checkbox]:checked ~ ul{
 h1{
   font-family: 'alex';
   font-size: 3em;
+  text-align: center;
 }
 #footer{
   width: 100%;
   height: 50px;
-  background-color: black;
+  background-color: #6A767F;
 
 }
 .admin{
@@ -337,3 +337,61 @@ input{
   padding: 4px;
 }
 /*mise en forme du formulaire de login admin*/
+
+/*mise en forme de la page parcoursback.php*/
+.enteteAdmin{
+  width: 100%;
+  height: 20px;
+  background-color: #A59483;
+  display: flex;
+  justify-content: flex-end;
+}
+.contenu{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#parcours{
+width: 300px;
+height: auto;
+background-color: #A59483;
+margin: 5px;
+border-radius: 6px;
+border: 1px solid black;
+}
+#parcours h1{
+  font-family: 'alex';
+  font-size: 1.5em;
+}
+.title, .text{
+  margin: 5px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.text{
+  overflow-y:auto;
+  max-height:150px;
+}
+/*mise en forme de la page parcoursback.php*/
+/*formulaire contact*/
+.formContact{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+.contact{
+  border: 2px solid black;
+  width: 50%;
+  height: 300px;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+.contact h1{
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/*formulaire contact*/
