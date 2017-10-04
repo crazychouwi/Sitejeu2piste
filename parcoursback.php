@@ -1,6 +1,3 @@
-
-
-
 <?php
 session_start();
 
@@ -37,6 +34,7 @@ if ($_SESSION['admin'] == "ok"){
       };
        ?>
       </div>
+      <footer id="footer"></footer>
     </body>
   </html>
 

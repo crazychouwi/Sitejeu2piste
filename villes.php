@@ -41,5 +41,6 @@
 </nav>
 </div>
 <h1>Les villes</h1>
+<footer id="footer"></footer>
 </body>
 </html>

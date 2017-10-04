@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="assets/css/carousel.css">
   </head>
   <body>
-    
+
     <div class="menuDeroulant">
     <nav>
       <label for="menu-mobile" class="menu-mobile">Menu</label>
@@ -58,5 +58,6 @@
     };
      ?>
     </div>
+    <footer id="footer"></footer>
   </body>
 </html>

@@ -41,5 +41,6 @@
 </nav>
 </div>
 <h1>Nos partenaires</h1>
+<footer id="footer"></footer>
 </body>
 </html>

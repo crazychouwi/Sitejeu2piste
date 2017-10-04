@@ -30,13 +30,13 @@ nav > ul > li{
 }
 /*ajout d'une bordure a chacun des sous elements*/
 .submenu li{
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid black;
 }
 /*mise en forme des liens des sous menus*/
 .submenu li a{
   padding: 15px 30px;
   font-size: 13px;
-  color: orange;
+  color: black;
   width: 270px;
 }
 /*on rend la case a cocher et le mot "menu" invisible*/
@@ -76,8 +76,8 @@ nav li:hover .submenu{
   z-index: 100000;
 }
 .menu-accueil:hover{
-  border-top: 5px solid #e44d26;
-  background-color: rgba(228, 77, 38, 0.15);
+  border-top: 5px solid #0070bb;
+  background-color: rgba(000, 112, 192, 0.15);
 }
 .menu-parcours:hover{
   border-top: 5px solid #0070bb;
@@ -85,31 +85,31 @@ nav li:hover .submenu{
 }
 /*habillage des sous onglets*/
 .menu-parcours .submenu{
-  background-color: rgb(230, 100, 40);
+background-color: rgb(251, 216, 99);
 }
 .menu-villes:hover{
-  border-top: 5px solid #f1dc4f;
-  background-color: rgba(241, 211, 79, 0.15);
+  border-top: 5px solid #0070bb;
+  background-color: rgba(000, 112, 192, 0.15);
 }
 /*habillage des sous onglets*/
 .menu-villes .submenu{
-  background-color: rgb(000, 160, 240);
+  background-color: rgb(251, 216, 99);
 }
 .menu-theme:hover{
-  border-top: 5px solid #BBB;
-  background-color: rgba(220, 220, 220, 0.15);
+  border-top: 5px solid #0070bb;
+  background-color: rgba(000, 112, 192, 0.15);
 }
 /*habillage des sous onglets*/
 .menu-theme .submenu{
   background-color: rgb(251, 216, 99);
 }
 .menu-partenaire:hover{
-  border-top: 5px solid #e44d26;
-  background-color: rgba(228, 77, 38, 0.15);
+  border-top: 5px solid #0070bb;
+  background-color: rgba(000, 112, 192, 0.15);
 }
 /*habillage des sous onglets*/
 .menu-partenaire .submenu{
-  background-color: rgb(230, 100, 40);
+  background-color: rgb(251, 216, 99);
 }
 .menu-contact:hover{
   border-top: 5px solid #0070bb;
@@ -117,7 +117,7 @@ nav li:hover .submenu{
 }
 /*habillage des sous onglets*/
 .menu-partenaire .submenu{
-  background-color: rgb(000, 160, 240);
+  background-color: rgb(251, 216, 99);
 }
 /*ajustement de l'amlignement du texte decaler suite a l'insertion de bordures*/
 nav > ul > li:hover a{
@@ -128,13 +128,14 @@ nav > ul > li:hover a{
   font-weight: bold;
 }
 .menu-villes .submenu li:hover{
-  background-color: rgb(210, 77, 60);
+  background-color: rgb(000, 115, 200);
+
 }
 .menu-theme .submenu li:hover{
   background-color: rgb(000, 115, 200);
 }
 .menu-partenaire .submenu li:hover{
-  background-color: rgb(200, 165, 75);
+  background-color: rgb(000, 115, 200);
 }
 /*affiche le menu quand on coche la case*/
 nav input[type=checkbox]:checked ~ ul{
@@ -153,7 +154,6 @@ nav input[type=checkbox]:checked ~ ul{
   nav ul{
     display: none;
   }
-
   nav ul li, nav ul li a{
   width: 100%;
   text-align: center;
@@ -169,12 +169,11 @@ nav input[type=checkbox]:checked ~ ul{
 /*menu*/
 
 /*carrousel*/
-*{
+.carousel{
+  position:relative;
   margin: 0;
   padding:0;
   box-sizing: border-box;
-}
-.carousel{
   width: 100%;
   height: 250px;
 }
@@ -252,6 +251,7 @@ nav input[type=checkbox]:checked ~ ul{
 /*header du site*/
 .essai{
   width: 100%;
+  height: 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -278,9 +278,12 @@ h1{
 }
 #footer{
   width: 100%;
-  height: 50px;
+  height: 40px;
   background-color: #6A767F;
-
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .admin{
 height: 100%;
@@ -355,7 +358,7 @@ input{
 #parcours{
 width: 300px;
 height: auto;
-background-color: #A59483;
+background-color: #88CCFF;
 margin: 5px;
 border-radius: 6px;
 border: 1px solid black;
@@ -373,25 +376,23 @@ border: 1px solid black;
   max-height:150px;
 }
 /*mise en forme de la page parcoursback.php*/
+
 /*formulaire contact*/
 .formContact{
   width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 15px;
-}
-.contact{
-  border: 2px solid black;
-  width: 50%;
   height: 300px;
-  background-color: grey;
-  color: white;
+  margin: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+#formContact{
+  background-color: silver;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 8px;
 }
-.contact h1{
+#formContact h1{
   font-family: Helvetica, Arial, sans-serif;
+  text-shadow: 3px 3px white;
 }
-
-
 /*formulaire contact*/
