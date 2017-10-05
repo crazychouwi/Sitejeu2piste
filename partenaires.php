@@ -5,7 +5,7 @@
     <title>parcoursback</title>
     <link rel="stylesheet" href="assets/css/carousel.css">
   </head>
-  <body>
+  <body class="partenairesPhp">
 <div class="menuDeroulant">
 <nav>
   <label for="menu-mobile" class="menu-mobile">Menu</label>

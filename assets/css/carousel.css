@@ -247,7 +247,14 @@ nav input[type=checkbox]:checked ~ ul{
   }
 }
 /*carrousel*/
-
+.pageAccueil{
+  background-image: url('../img/papier.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding:0;
+}
 /*header du site*/
 .essai{
   width: 100%;
@@ -292,7 +299,9 @@ display: flex;
 justify-content: flex-end;
 align-items: flex-end;
 }
-
+.admin a{
+  color:white;
+}
 /*mise en forme du formulaire de login admin*/
 .form{
   width: 100%;
@@ -340,8 +349,19 @@ input{
   padding: 4px;
 }
 /*mise en forme du formulaire de login admin*/
-
+.villesPhp, .themesPhp, .partenairesPhp, .contactHtml{
+  margin: 0;
+  padding: 0;
+}
 /*mise en forme de la page parcoursback.php*/
+.parcoursPhp{
+  background-image: url('../img/narbonne.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding:0;
+}
 .enteteAdmin{
   width: 100%;
   height: 20px;
@@ -358,7 +378,7 @@ input{
 #parcours{
 width: 300px;
 height: auto;
-background-color: #88CCFF;
+background-color: rgba(136,204,255,0.4);
 margin: 5px;
 border-radius: 6px;
 border: 1px solid black;
@@ -374,6 +394,9 @@ border: 1px solid black;
 .text{
   overflow-y:auto;
   max-height:150px;
+  text-indent: 20px;
+  text-align:justify;
+  padding: 4px;
 }
 /*mise en forme de la page parcoursback.php*/
 

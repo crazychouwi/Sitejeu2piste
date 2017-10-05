@@ -5,7 +5,7 @@
     <title>parcoursback</title>
     <link rel="stylesheet" href="assets/css/carousel.css">
   </head>
-  <body>
+  <body class="parcoursPhp">
 
     <div class="menuDeroulant">
     <nav>
@@ -41,6 +41,7 @@
       </ul>
     </nav>
     </div>
+
     <h1>Les Parcours</h1>
 
     <div class="contenu">
@@ -58,6 +59,6 @@
     };
      ?>
     </div>
-    <footer id="footer"></footer>
+    <!-- <footer id="footer"></footer> -->
   </body>
 </html>
