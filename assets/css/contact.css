@@ -8,9 +8,8 @@ form {
     border-radius: 1em;
     font-family: Helvetica, Arial,sans-serif;
     background-color: #6A767F;
-    opacity: 0.8;
 }
-form div + div {
+.champs {
     margin-top: 1em;
 }
 label {
