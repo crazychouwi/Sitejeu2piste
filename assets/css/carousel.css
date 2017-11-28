@@ -252,8 +252,8 @@ nav input[type=checkbox]:checked ~ ul{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /*margin: 0;
-  padding:0;*/
+  margin: 0;
+  padding:0;
 }
 /*header du site*/
 .accueil{
@@ -343,6 +343,7 @@ align-items: flex-end;
 }
 .admin a{
   color:white;
+  padding: 4px;
 }
 /*mise en forme du formulaire de login admin*/
 .form{
@@ -391,15 +392,17 @@ input{
   padding: 4px;
 }
 /*mise en forme du formulaire de login admin*/
-.villesPhp, .themesPhp, .partenairesPhp, .contactHtml{
+/*.villesPhp, .themesPhp, .partenairesPhp, .contactHtml{
   margin: 0;
   padding: 0;
-}
-.contactHtml{
+}*/
+.contactHtml, .gruissanPhp, .villesPhp, .themesPhp, .partenairesPhp, .narbonne, .narbonneplage{
   background-image: url('../img/papier.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 0;
+  padding:0;
 }
 /*mise en forme de la page parcoursback.php*/
 .parcoursPhp{
@@ -475,4 +478,16 @@ padding: 0px;
   justify-content: space-between;
   margin: 0;
   padding: 0;
+}
+#villes{
+  width: 300px;
+  height: 100px;
+  background-color: rgba(136,204,255,0.4);
+  margin: 5px;
+  border-radius: 6px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
 }
